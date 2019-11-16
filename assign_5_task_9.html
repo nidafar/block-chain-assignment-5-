@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>assignment 5</title>
+
+    </head>
+    <body>
+        <script>
+            /*Write a function to add weeks in current date*/
+            function addWeek(numWeeks) {
+                var now = new Date();
+                now.setDate(now.getDate() + numWeeks * 7);
+                console.log(now);
+            }
+            addWeek(3);
+            addWeek(10);
+        </script>
+    </body>
+</html>

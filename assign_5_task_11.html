@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>assignment 5</title>
+
+    </head>
+    <body>
+        <script>
+            /*Write a function named isVowel that accept stringcharater and check using switch
+            statement that character is a vowel or not. function should return true if its vowel and
+            false if its not vowel*/
+            function isVowel(char) {
+                
+                var  character = char.toLowerCase();
+                
+                    switch (character) {
+                        case "a":
+                        case "e":
+                        case "i":
+                        case "o":
+                        case "u":
+                        return true;
+                        break;
+                        default:
+                        return false;
+                    }
+                }
+                console.log(isVowel("S"));
+                console.log(isVowel("e"));
+                console.log(isVowel("k"));
+                console.log(isVowel("u"));
+            
+            
+        </script>
+    </body>
+</html>

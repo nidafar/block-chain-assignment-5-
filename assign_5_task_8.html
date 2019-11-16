@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>assignment 5</title>
+        
+    
+    </head>
+    <body>
+        <script>
+            /* write a function that take birth date and returns Age in years, months and days*/
+            function calculateAge(dob) {
+                var curDate = new Date();
+                var bthDate = new Date(dob)
+                days = Math.floor((curDate-bthDate)/(1000 * 60 * 60 * 24));
+                ageYears = Math.floor(days /365);
+                ageMonths = Math.floor((days % 365) / 31);
+                ageDays = days - (ageYears * 365) - (ageMonths * 31);
+                console.log("You are" + ageYears + "years, " + ageMonths + " months and " + ageDays + " daysold");
+           
+            }
+            calculateAge('Jan 2, 2000');
+            calculateAge('April 25, 1988');
+            calculateAge('December 13, 1986');
+        </script>
+    </body>
+</html>

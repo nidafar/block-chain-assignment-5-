@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>assignment 5</title>
+
+    </head>
+    <body>
+        <script>
+            /*Write a function that accept the string and return count of vowel used in the string*/
+            function countVowels(str) {
+                var vowelsCount = 0;
+                var string = str . toLowerCase();
+                for (var i = 0; i < string.length; i++){
+                    switch (string.charAt(i)){
+                        case "a":
+                        case "e":
+                        case "i":
+                        case "o":
+                        case "u":
+                        vowelsCount += 1;
+                        break;
+                    }
+                }
+                console.log(vowelsCount + " vowels");
+            }
+            countVowels("Nida Farooqui");
+            countVowels("geometry");
+            countVowels("vase");
+            
+        </script>
+    </body>
+</html>
